@@ -10,15 +10,18 @@
   <body class="bg-gradient-to-r from-purple-500 to-yellow-500 min-h-screen">
     <div class="bg-white max-w-lg mx-auto rounded mt-10 px-10 py-5">
       <h1 class="font-bold text-3xl" >CNG Cost Calculator</h1>
+
+      <form action="">
 <!-- Trip distance -->
-      <div>
-        <input type="number" placeholder="Trip Distance" required class="form-input"/>
+      <div class="pt-5">
+        <label for="" class="font-semibold text-zinc-500">Trip Distance<span class="text-red-600 " >*</span></label>
+        <input type="number" placeholder="Trip Distance"  class="form-input " id="trip-distance" required/>
       </div>
 
       <!-- Fuel efficiency -->
       <div>
         <label for="" class="font-semibold text-zinc-500">Fuel Efficiency <span class="text-red-600 " >*</span></label>
-        <input type="number" placeholder="Fuel efficiency" required class="form-input text-zinc-600" value="24"/>
+        <input type="number" placeholder="Fuel efficiency" required class="form-input text-zinc-600" value="24" id="fuel-efficiency"/>
       </div>
 
       <!-- Fuel Cost -->
@@ -26,11 +29,19 @@
         <label for="" class="font-semibold text-zinc-500">Fuel Cost <span class="text-red-600">*</span></label>
 
         <input type="number" placeholder="Fuel Cost" required
-        value="100" class="form-input text-zinc-600"/>
+        value="100" id="fuel-cost" class="form-input text-zinc-600"/>
       </div>
       <div>
-        <button class="bg-green-700 rounded px-4 py-2 w-full  text-white font-bold" type="submit">Calculate</button>
+      
+        <button class="bg-green-700 rounded px-4 py-2 w-full  text-white font-bold hover:bg-green-500" type="submit" id="cal-btn" >Calculate</button>
+       
       </div>
     </div>
+  </form>
+
+    <!-- JS -->
+    <script src="index.js">
+
+    </script>
   </body>
 </html>
